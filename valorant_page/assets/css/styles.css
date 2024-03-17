@@ -114,12 +114,16 @@ header div {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-top: 80px;
+}
+
+#maps h2 {
+  position: absolute;
+  top: 0px;
 }
 #maps ul {
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
-  top: 80px;
   gap: 30px;
 }
 
