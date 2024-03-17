@@ -19,15 +19,24 @@
     <header>
       <div class="grid">
         <a href="#start"
-          ><img class="logo" src="/assets/logo_valorant.png"
+        ><img class="logo" src="/assets/logo_valorant.png"
         /></a>
         <nav>
           <ul class="header-menu">
             <li><a href="#start">Home</a></li>
             <li><a href="#maps">Mapas</a></li>
-            <li><a>Agentes</a></li>
-            <li><a>Sobre</a></li>
+            <li><a href="#agents">Agentes</a></li>
+            <li><a href="#contate">Contate</a></li>
           </ul>
+          <div onclick="toggleMenu()" class="hamburger-icon">&#9776</div>
+          <div id="overlay" class="overlay">
+            <ul>
+              <li><a href="#start">Home</a></li>
+              <li><a href="#maps">Mapas</a></li>
+              <li><a>Agentes</a></li>
+              <li><a href="#contate">Contate</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -42,28 +51,65 @@
           <button class="primary-button"><span>Jogue grátis</span></button>
         </div>
       </section>
-      <section id="maps" class="grid">
-        <h2>Mapas</h2>
-        <ul>
-          <li>
-            <img src="assets/img/map/ascent.webp" />
-            <p>Localização: Itália</p>
-            <h3>Ascent</h3>
-          </li>
-          <li>
-            <img src="assets/img/map/icebox.webp" />
-            <p>Localização: Butão</p>
-            <h3>Icebox</h3>
-          </li>
-          <li>
-            <img src="assets/img/map/haven.webp" />
-            <p>Localização: Russia</p>
-            <h3>Haven</h3>
-          </li>
-        </ul>
+      <section id="maps">
+        <div class="grid">
+          <h2>Mapas</h2>
+          <ul>
+            <li>
+              <img src="assets/img/map/ascent.webp" />
+              <p>Localização: Itália</p>
+              <h3>Ascent</h3>
+            </li>
+            <li>
+              <img src="assets/img/map/icebox.webp" />
+              <p>Localização: Butão</p>
+              <h3>Icebox</h3>
+            </li>
+            <li>
+              <img src="assets/img/map/haven.webp" />
+              <p>Localização: Russia</p>
+              <h3>Haven</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- <section id="agents">
+        <div class="grid">
+          <h2>Agentes</h2>
+          <ul>
+            <li>Jett</li>
+            <li>Sage</li>
+            <li>Pheonix</li>
+          </ul>
+        </div>
+      </section> -->
+      <section id="contact">
+        <div class="grid">
+          <h2>Contato</h2>
+          <form>
+            <div class="field">
+              <label>Nome</label>
+              <input type="text">
+            </div>
+            <div class="separator">
+              <div class="field">
+                <label>Email</label>
+                <input type="email">
+              </div>
+              <div class="field">
+                <label>Telefone</label>
+                <input type="number">
+              </div>
+            </div>
+            <div class="field">
+              <label>Mensagem</label>
+              <textarea></textarea>
+            </div>
+            </form>
+        </div>
       </section>
     </main>
     <footer></footer>
-    <script src="script.js"></script>
+    <script src="js/global.js"></script>
   </body>
 </html>
