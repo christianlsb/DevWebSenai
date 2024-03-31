@@ -1,1 +1,1 @@
-### Repositorio destinado para a materia de desenvolvimento web
+### Repositorio destinado para a materias da faculdade
